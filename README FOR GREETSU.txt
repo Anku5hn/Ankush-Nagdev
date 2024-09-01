@@ -24,7 +24,7 @@ return(
     {
         Error && <p style={{color: "red"}}>Invalid Email</p>
     }
-    </div>S
+    </div>
     </>
 )
 
