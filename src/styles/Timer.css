@@ -1,0 +1,56 @@
+.timer-container {
+  background-image: linear-gradient(to right, #e5b8d9, #c9b8e5);
+  opacity: 0.7;
+  width: 434px;
+  height: 184px;
+  border-radius: 24px;
+  margin-top: 80px;
+}
+.timer--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.timer-container h3 {
+  font-size: 64px;
+  font-weight: 500;
+  padding: 32px;
+}
+.timer-container p {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.timer---hours{
+display: none;
+}
+@media screen and (max-width: 431px) {
+  .timer-container {
+    background-image: linear-gradient(to right, #e5b8d9, #c9b8e5);
+    opacity: 0.6;
+    width: 230px;
+    height: 106px;
+    border-radius: 12px;
+    margin-top: 40px;
+  }
+  .timer--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .timer-container h3 {
+    font-size: 42px;
+    font-weight: 500;
+    padding: 7px;
+  }
+  .timer-container p {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 7px;
+  }
+.timer---hours{
+  display: none;
+}
+}

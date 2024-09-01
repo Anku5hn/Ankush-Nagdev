@@ -1,0 +1,156 @@
+.blob-container {
+  filter: blur(125px);
+  height: 100vh;
+  width: 95vw;
+}
+.blob {
+  width: 345px;
+  height: 345px;
+  border-radius: 50%;
+}
+.blob-pink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(#68275e, #96207a, #d01b9c, #d01b9c);
+  animation-name: pinkBlob;
+  animation-duration: 10s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.blob-blue {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(#652ca8, #7a2ed6, #7a2ed6, #8a38f5);
+  animation-name: blueBlob;
+  animation-duration: 10s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes pinkBlob {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 75vw;
+  }
+  50% {
+    top: 60vh;
+    left: 75vw;
+  }
+  75% {
+    top: 60vh;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes blueBlob {
+  0% {
+    bottom: 0;
+    right: 0;
+  }
+  25% {
+    bottom: 0;
+    right: 75vw;
+  }
+  50% {
+    bottom: 60vh;
+    right: 75vw;
+  }
+  75% {
+    bottom: 60vh;
+    right: 0;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 431px) {
+  .blob-container {
+    filter: blur(75px);
+    height: 100vh;
+    width: 100vw;
+  }
+  .blob {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 50%;
+  }
+  .blob-pink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(#68275e, #96207a, #d01b9c, #d01b9c);
+    animation-name: pinkBlob;
+    animation-duration: 8s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .blob-blue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: radial-gradient(#652ca8, #7a2ed6, #7a2ed6, #8a38f5);
+    animation-name: blueBlob;
+    animation-duration: 8s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes pinkBlob {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: 60vw;
+    }
+    50% {
+      top: 60vh;
+      left: 60vw;
+    }
+    75% {
+      top: 60vh;
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+  @keyframes blueBlob {
+    0% {
+      bottom: 0;
+      right: 0;
+    }
+    25% {
+      bottom: 0;
+      right: 60vw;
+    }
+    50% {
+      bottom: 60vh;
+      right: 60vw;
+    }
+    75% {
+      bottom: 60vh;
+      right: 0;
+    }
+    100% {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

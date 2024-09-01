@@ -1,0 +1,297 @@
+.home-wrapper {
+  width: calc(100vw-414px);
+  height: auto;
+  position: absolute;
+  top: 152px;
+  left: 25%;
+}
+.home--title-wrapper h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+.home--paragraph-wrapper p {
+  font-size: 24px;
+  text-align: center;
+}
+.home--paragraph-wrapper {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.home--get-ready-wrapper > h2 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.home--timer-container {
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.timer--email-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.timer--email-container p {
+  text-align: center;
+  font-size: 24px;
+}
+.home--email-field {
+  height: 52px;
+  width: 600px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 12px;
+}
+.home--email-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+.notify-button{
+  height: 52px;
+  width: 190px;
+  font-size: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: black;
+}
+.home--get-ready-wrapper > h2::after{
+content: "";
+display: inline-block;
+width: 30px;
+height: 30px;
+background-image: url("");
+padding: 0px;
+margin-left: -20px;
+margin-bottom: 8px;
+background-repeat: no-repeat;
+background-size: 30px 30px;
+animation-name: starAnimation;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-out;
+}
+@keyframes starAnimation {
+  0%{
+    background-image: url("");
+  }
+  25%{
+    background-image: url("");
+  }
+  50%{
+    background-image: url("");
+  }
+  75%{
+    background-image: url("./images/Star-Light.png");
+  }
+  100%{
+    background-image: url("./images/Star-Light.png");
+  }
+}
+.home--title-wrapper h1::before {
+  content: "";
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-image: url("./images/Rocket-1-light.png");
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  animation-name: rocketAnimation;
+  animation-delay: 1.6s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+@keyframes rocketAnimation {
+  0% {
+    background-image: url("./images/Rocket-1-light.png");
+  }
+  50% {
+    background-image: url("./images/Rocket-2-light.png");
+  }
+  100% {
+    background-image: url("./images/Rocket-1-light.png");
+  }
+}
+.live-container{
+  position: absolute;
+  top: 25vh;
+  left: 30vw;
+  width: 699px;
+  height: 398px;
+  background-image: linear-gradient(to right, #e5b8d9, #c9b8e5);
+  opacity: 0.8;
+  border-radius: 24px;
+}
+.live-container h1{
+  font-weight: bold;
+  font-size: 64px;
+  margin-top: 48px;
+}
+.live-container p{
+  font-size: 24px;
+  text-align: center;
+}
+.live--text{
+  margin-top: 24px;
+}
+.live-container button{
+  height: 52px;
+  width: 224px;
+  font-size: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 72px;
+}
+@media screen and (max-width: 431px) {
+  .home-wrapper {
+    width: calc(100vw - 50px);
+    height: 85vh;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .home--paragraph-wrapper {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .home--title-wrapper h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .home--paragraph-wrapper p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .home--get-ready-wrapper > h2 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .home--timer-container {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home--title-wrapper h1::before{
+    display: none;
+  }
+  .home--title-wrapper h1::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("./images/Rocket-1-light.png");
+    ackground-repeat: no-repeat;
+    background-size: 30px 30px;
+    animation-name: rocketAnimation;
+    animation-delay: 1.6s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+  .timer--email-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .timer--email-container p {
+    text-align: center;
+    font-size: 12px;
+  }
+  .home--email-field {
+    height: 36px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 12px;
+  }
+  .home--email-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .notify-button{
+    height: 34px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+  }
+  .home--get-ready-wrapper > h2::after{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("");
+    padding: 0px;
+    margin-left: -10px;
+    margin-bottom: 4px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    animation-name: starAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    }
+    .live-container{
+      position: absolute;
+      top: 40vh;
+      left: 0px;
+      width: calc(100vw - 20px);
+      margin-left: 10px;
+      height: 206px;
+      background-image: linear-gradient(to right, #e5b8d9, #c9b8e5);
+      opacity: 0.8;
+      border-radius: 24px;
+    }
+    .live-container h1{
+      font-weight: bold;
+      font-size: 24px;
+      margin-top: 24px;
+    }
+    .live-container p{
+      font-size: 12px;
+      text-align: center;
+    }
+    .live--text{
+      margin-top: 12px;
+    }
+    .live-container button{
+      height: 34px;
+      width: 152px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      background-color: black;
+      color: white;
+      margin-top: 72px;
+    }
+}

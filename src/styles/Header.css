@@ -1,0 +1,29 @@
+.header-container {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background-color: transparent;
+}
+.header--product {
+  background-color: black;
+  color: white;
+}
+.header-container > h2 {
+  font-size: 24px;
+}
+@media screen and (max-width: 431px) {
+  .header-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    height: 40px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+  .header-container > h2 {
+    font-size: 13px;
+    margin-left: 12px;
+  }
+}
