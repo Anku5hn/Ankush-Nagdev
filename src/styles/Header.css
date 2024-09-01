@@ -4,10 +4,7 @@
   left: 24px;
   background-color: transparent;
 }
-.header--product {
-  background-color: black;
-  color: white;
-}
+
 .header-container > h2 {
   font-size: 24px;
 }

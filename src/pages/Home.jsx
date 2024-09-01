@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Blob from "../components/Blob.jsx";
 import Header from "../components/layout/Header.jsx";
 import Timer from "../components/Timer.jsx";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [inputText, setInputText] = useState("Please enter your email id");
   const [notifyColor, setNotifyColor] = useState("gray");
@@ -28,7 +29,7 @@ useEffect(()=>{
   return (
     <>
       <Blob />
-      <Header />
+      <Header product={{backgroundColor: "black", color: "white"}} heading={{color:"black"}}/>
       <div className="home-wrapper" style={{display:viewHome}}>
         <div className="home--text-container">
           <div className="home--title-wrapper">
@@ -73,7 +74,9 @@ useEffect(()=>{
         <p>Our new feature is now <strong>Live and ready</strong> for you to explore.</p>
         <p>Go ahead and give it a try</p>
         </div>
+        <Link to="/question">
         <button style={{cursor:"pointer"}}>Get Started</button>
+        </Link>
       </div>
     </>
   );
