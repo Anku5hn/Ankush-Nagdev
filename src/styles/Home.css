@@ -292,5 +292,6 @@ animation-timing-function: ease-out;
       background-color: black;
       color: white;
       margin-top: 72px;
+      margin-bottom: 10px;
     }
 }
