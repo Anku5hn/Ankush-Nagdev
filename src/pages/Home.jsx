@@ -60,7 +60,7 @@ useEffect(()=>{
                 onFocus={handleEmailFocus}
                 onBlur={handleEmailBlur}
               />
-              <button className="notify-button" style={{ color: notifyColor }}>
+              <button className="notify-button" style={{ color: notifyColor, cursor:"pointer" }}>
                 Notify Me
               </button>
             </div>
@@ -73,7 +73,7 @@ useEffect(()=>{
         <p>Our new feature is now <strong>Live and ready</strong> for you to explore.</p>
         <p>Go ahead and give it a try</p>
         </div>
-        <button>Get Started</button>
+        <button style={{cursor:"pointer"}}>Get Started</button>
       </div>
     </>
   );
