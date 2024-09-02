@@ -1,3 +1,5 @@
+Use command -- npm run dev -- to start the project
+
 Since the API link was not available to me, I couldn't complete the Notify section mentioned in the assignment.
 
 If I did have the API link, I would create a loding component, use axios to post the email/to check the database if
@@ -31,3 +33,5 @@ return(
 Apart from this, I have tried bring the exact desing as mentioned in the as in the assignment.
 The dark mode is still remaining, Since I'm submitting the assignment now because of the deadline, I'll try to complete the dark mode 
 and update the repo after submitting. I'll also update this readme once the dark mode is complete. 
+
+Submitting this project again because I think I mis spelled my email in the previous one. 
